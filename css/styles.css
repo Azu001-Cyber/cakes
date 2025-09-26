@@ -362,6 +362,9 @@ img.abt-img{
         display: block;
         
     }
+    .offcanvas{
+        width: 250px !important;;
+    }
 }
 
 /* Footer styles */

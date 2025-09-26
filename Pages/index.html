@@ -33,11 +33,11 @@
                 <img src="../image/baci-cake-logo.png" alt="site-logo" class="nav-img">
             </a> <!--TODO:Add a logo-->
 
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
-
-            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Desktop Nav -->
+            <div class=" collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-0 mb-lg-0 px-5">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link text-dark active" aria-current="page">Home</a>
@@ -60,7 +60,36 @@
                 </ul>
             </div>
         </div>
+        <!-- Offcanvas Sidebar (MOBILE) -->
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNav" aria-labelledby="navbarNavlabel">
+            <div class="offcanvas-header">
+                <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-dark active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-dark">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link text-dark">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-dark">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-dark">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html#faq" class="nav-link text-dark">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <div id="overlay" tabindex="-1" aria-hidden="true"></div>
 
     <section class="hero" id="home">
         <div class="container-fluid main">
