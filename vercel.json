@@ -2,9 +2,9 @@
     "version": 2,
     "routes": [
         { "src": "/", "dest": "/Pages/index.html" },
-        { "src": "/about.html", "dest": "/Pages/about.html" },
-        { "src": "/contact.html", "dest": "/Pages/contact.html" },
-        { "src": "/menu.html", "dest": "/Pages/menu.html" },
-        { "src": "/gallery.html", "dest": "/Pages/gallary.html" }
+        { "src": "/about/", "dest": "/Pages/about.html" },
+        { "src": "/contact/", "dest": "/Pages/contact.html" },
+        { "src": "/menu/", "dest": "/Pages/menu.html" },
+        { "src": "/gallery/", "dest": "/Pages/gallary.html" }
     ]
     }
