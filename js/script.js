@@ -9,3 +9,15 @@ document.addEventListener("DOMContentLoaded", function(){
     };
 });
 
+// gallary card script
+
+const hearthIcon  = document.getElementById('hearth-icon')
+const  bagIcon = document.getElementById('bag-icon')
+function react(){
+    hearthIcon.style.color = "#f00"
+}
+function bagreact(){
+    bagIcon.style.color = "#0f0"
+}
+bagIcon.addEventListener('click', bagreact)
+hearthIcon.addEventListener('click', react);
