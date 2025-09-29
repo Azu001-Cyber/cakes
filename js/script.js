@@ -11,13 +11,38 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // gallary card script
 
-const hearthIcon  = document.getElementById('hearth-icon')
-const  bagIcon = document.getElementById('bag-icon')
-function react(){
-    hearthIcon.style.color = "#f00"
+// const hearthIcon  = document.getElementById('hearth-icon')
+// const  bagIcon = document.getElementById('bag-icon')
+// function react(){
+//     hearthIcon.style.color = "#f00"
+// }
+// function bagreact(){
+//     bagIcon.style.color = "#0f0"
+// }
+// bagIcon.addEventListener('click', bagreact)
+// hearthIcon.addEventListener('click', react);
+
+// Redirect from Home to Other Pages
+
+const orderNow = document.getElementById('order-now');
+const learnMore = document.getElementById('learn-more');
+const getInTouch = document.getElementById('get-in-touch');
+
+function redirectPage(event){
+    switch (event.target.id) {
+        case 'order-now':
+            window.location.href = "http://127.0.0.1:5501/menu.html";
+            break;
+        case 'learn-more':
+            window.location.href = "http://127.0.0.1:5501/about.html";
+            break;
+        case 'get-in-touch':
+            window.location.href = "http://127.0.0.1:5501/contact.html";
+            break;
+    }
 }
-function bagreact(){
-    bagIcon.style.color = "#0f0"
-}
-bagIcon.addEventListener('click', bagreact)
-hearthIcon.addEventListener('click', react);
+
+getInTouch.addEventListener('click', redirectPage);
+orderNow.addEventListener('click', redirectPage);
+learnMore.addEventListener('click', redirectPage);
+
