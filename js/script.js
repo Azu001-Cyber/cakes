@@ -31,13 +31,13 @@ const getInTouch = document.getElementById('get-in-touch');
 function redirectPage(event){
     switch (event.target.id) {
         case 'order-now':
-            window.location.href = "http://127.0.0.1:5501/menu.html";
+            window.location.href = "https://baki-cakes.vercel.app/menu.html";
             break;
         case 'learn-more':
-            window.location.href = "http://127.0.0.1:5501/about.html";
+            window.location.href = "https://baki-cakes.vercel.app/about.html";
             break;
         case 'get-in-touch':
-            window.location.href = "http://127.0.0.1:5501/contact.html";
+            window.location.href = "https://baki-cakes.vercel.app/contact.html";
             break;
     }
 }
